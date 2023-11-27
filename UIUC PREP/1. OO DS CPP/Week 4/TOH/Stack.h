@@ -1,11 +1,13 @@
-#include "Cube.h"
+#pragma once
+
 #include <vector>
 #include <ostream>
+#include "Cube.cpp"
 
 class Stack {
     public:
-        void push_back(const Cube & cube);
-        Cube removeTop();
+        void addCube(const Cube & cube);
+        Cube removeCube();
         Cube & peekTop();
         unsigned size() const;
 
